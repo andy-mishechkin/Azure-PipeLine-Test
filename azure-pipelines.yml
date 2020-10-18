@@ -11,9 +11,10 @@ pool:
 
 steps:
 - script: |
-    git clone https://github.com/andy-mishechkin/Azure-PipeLine-Test.git c:/mProcessTools
+    git clone https://github.com/andy-mishechkin/Azure-PipeLine-Test.git /mProcessTools
     cd /mProcessTools
     dir
+    c:
     cd "C:\Program Files (x86)\Microsoft Visual Studio\"
     dir
       
