@@ -11,12 +11,11 @@ pool:
 
 steps:
 - script: |
-    git clone https://github.com/andy-mishechkin/Azure-PipeLine-Test.git /mProcessTools
-    cd /mProcessTools
-    dir
+    git clone https://github.com/andy-mishechkin/Azure-PipeLine-Test.git C:/mProcessTools
     c:
-    cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Roslyn\"
-    dir
+    cd C:\mProcessTools
+    "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Roslyn\csc.exe" -target:library mProcessToolDll.cs
+
       
   displayName: 'Build mProcessTools dll'
 
