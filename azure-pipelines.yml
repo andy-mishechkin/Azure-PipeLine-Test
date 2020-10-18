@@ -14,7 +14,8 @@ steps:
     git clone https://github.com/andy-mishechkin/Azure-PipeLine-Test.git c:/mProcessTools
     cd /mProcessTools
     dir
-    cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Roslyn\"
+    cd "C:\Program Files (x86)\Microsoft Visual Studio\"
+    dir
       
   displayName: 'Build mProcessTools dll'
 
