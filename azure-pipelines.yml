@@ -20,6 +20,7 @@ steps:
 - pwsh: |
     Write-Host "Build Status: [$env:AGENT_JOBSTATUS]"
   displayName: "Show the environment variables"
+  condition: succeededOrFailed()
 
 - publish: $(System.DefaultWorkingDirectory)/mProcessTools/mProcessToolDll.dll
 
