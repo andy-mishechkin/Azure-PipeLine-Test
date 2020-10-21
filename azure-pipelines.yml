@@ -16,5 +16,8 @@ steps:
     "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Roslyn\csc.exe" -target:library mProcessToolDll.cs
   displayName: 'Build mProcessTools dll'
 
+- pwsh: |
+    Write-Host "Build Status: [$env:AGENT_JOBSTATUS]"
+
 - publish: $(System.DefaultWorkingDirectory)/mProcessTools/mProcessToolDll.dll
 
