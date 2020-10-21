@@ -14,7 +14,7 @@ steps:
     git clone https://github.com/andy-mishechkin/Azure-PipeLine-Test.git $(System.DefaultWorkingDirectory)/mProcessTools
     cd "$(System.DefaultWorkingDirectory)\mProcessTools"
     "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\Roslyn\csc1.exe" -target:library mProcessToolDll.cs
-    echo %AGENT_JOBSTATUS%
+    echo "AGENT_JOBSTATUS: [%AGENT_JOBSTATUS%]"
   displayName: 'Build mProcessTools dll'
 
 - pwsh: |
