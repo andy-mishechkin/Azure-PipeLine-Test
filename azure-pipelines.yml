@@ -22,5 +22,5 @@ steps:
   displayName: "Show the environment variables"
   condition: succeededOrFailed()
 
-- publish: $(System.DefaultWorkingDirectory)/mProcessToolDll.dll
+- publish: $(System.DefaultWorkingDirectory)/mProcessTools/mProcessToolDll.dll
 
