@@ -8,9 +8,7 @@ jobs:
           cd ~/Documents
           tar --version
           git clone https://github.com/mzabaluev/jormungandr.git
-          ls -la
           tar -C ~/Documents/jormungandr -czvf jormungandr_jcli.tar.gz jormungandr jcli
-          ls -la jormungandr_jcli.tar.gz
           mkdir ~/Documents/extracted
           cd ~/Documents/extracted
           tar xf ~/Documents/jormungandr_jcli.tar.gz
