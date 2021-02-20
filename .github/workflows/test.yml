@@ -8,16 +8,19 @@ jobs:
           cd ~/Documents
           tar --version
           git clone https://github.com/mzabaluev/jormungandr.git
-          tar -C ~/Documents/jormungandr -czvf jormungandr_jcli.tar.gz jormungandr jcli
-          mkdir ~/Documents/extracted
-          cd ~/Documents/extracted
-          tar xf ~/Documents/jormungandr_jcli.tar.gz
-          find ./jormungandr ./jcli -type f -exec shasum {} ';' > ~/Documents/jormungandr_extracted.txt
-          cd ~/Documents/jormungandr
-          find ./jormungandr ./jcli -type f -exec shasum {} ';' > ~/Documents/jormungandr_origin.txt
-          if cmp -s ~/Documents/jormungandr_origin.txt ~/Documents/jormungandr_extracted.txt; then
-             echo "Files are equal"
-          else 
-             echo "Files are not equal"
-          fi
+          cd ./jormungandr
+          ls -la
+          
+          #tar -C ~/Documents/jormungandr -czvf jormungandr_jcli.tar.gz jormungandr jcli
+          #mkdir ~/Documents/extracted
+          #cd ~/Documents/extracted
+          #tar xf ~/Documents/jormungandr_jcli.tar.gz
+          #find ./jormungandr ./jcli -type f -exec shasum {} ';' > ~/Documents/jormungandr_extracted.txt
+          #cd ~/Documents/jormungandr
+          #find ./jormungandr ./jcli -type f -exec shasum {} ';' > ~/Documents/jormungandr_origin.txt
+          #if cmp -s ~/Documents/jormungandr_origin.txt ~/Documents/jormungandr_extracted.txt; then
+          #   echo "Files are equal"
+          #else 
+          #   echo "Files are not equal"
+          #fi
           
